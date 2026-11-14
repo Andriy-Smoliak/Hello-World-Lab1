@@ -1,0 +1,22 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Hello World TypeScript project for Lab 1, variant 6",
+  "engines": {
+    "node": "24.x",
+    "npm": ">=10"
+  },
+  "scripts": {
+    "build": "tsc",
+    "postbuild": "node scripts/create-launchers.mjs",
+    "start": "node build/index.js",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^3.0.0"
+  }
+}
